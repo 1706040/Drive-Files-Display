@@ -1,0 +1,12 @@
+<div class="card-deck">
+    <div class="card" *ngFor="let file of data">
+        <div class="alignment">
+            <img *ngIf="file.type === 'folder'" class="card-img-top" src="../../assets/img/folder-icon.png" alt="Card image cap">
+            <img *ngIf="file.type === 'file'" class="card-img-top" src="../../assets/img/file-icon.png" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> {{file.name}} </h5>
+            <p class="card-text"> {{file.type}} </p>
+        </div>
+    </div>
+</div>
